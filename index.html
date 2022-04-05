@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css animation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: azure;
+          
+           
+           
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+           justify-content: center;
+           text-align: center;
+           align-items: center;
+           
+        }
+        .box{
+           border: 1px solid black;
+           width: 300px;
+           height: 300px;
+           display: flex;
+           justify-content: center;
+           text-align: center;
+           align-items: center;
+           background-color: white;
+           box-shadow: 0 0 15px rgba(0, 0,0,0.3);
+          position: absolute;
+          animation-name: sample;
+          animation-duration: 3s;
+          transition: ease 0.3s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        @keyframes sample{
+            from{border-radius: 0%;}
+            to{border-radius: 50%;
+            background-color: red;
+            font-size: 2rem;
+            color: white;
+        }
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Css Animation</h1></center>
+    <div class="main">
+        <div class="box">
+              gulshan
+        </div>
+    </div>
+</body>
+</html>
